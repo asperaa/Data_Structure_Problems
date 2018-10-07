@@ -1,0 +1,9 @@
+1.Remember to free the memory of the deleted node.
+2.Edge cases for delete a node for a given key --- if head is deleted,if key to be deleted is not present,if the tail is deleted.
+3.Comment your own code.Helps in revision.
+4. Always handle case in which (i)the operational node is head node ,(ii)The iteration goes to the end.(here,prevent infinite loop)
+5.In the middle of the linked list case,had problem in handling even no. of elements(seg fault).Was going out of bounds in the end of the LL. had to add(&&) the case of fastptr->next->next in the "while loop".
+6.Ref point 5,In the even case ask the interviewer/specify to him about the what number you will be printing in the even case.Handle the case of even and odd casrefully when returning the data.
+7.In case of deleting the whole Linked List,do iteration by using currentNode and nextNode instead of previousNode  and currentNode.
+8.Whenever infinite loop occurs,check whether you updated the counter (eg;ptr=ptr->next)....
+9.In reverse of the linked list,clever initialisation of previousNode(=NULL) can save "a pointer space" and some "constant time".Also,elegant implementation.
